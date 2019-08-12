@@ -1,0 +1,91 @@
+\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+% \usepackage{cite}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage{flushend}
+\usepackage{amsmath,amssymb,amsfonts}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\algnewcommand{\LineComment}[1]{\Statex \(\triangleright\) #1}
+
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false, font=normalsize, labelfont=sf, textfont=sf]{subfig}
+\else
+  \usepackage[caption=false, font=footnotesize]{subfig}
+\fi
+\usepackage{upquote}
+% nounderscore added so that this package doesn't break underscores in references.
+\usepackage[nounderscore]{syntax}
+
+% Used to suppress useless warnings when including our generated figures
+\pdfsuppresswarningpagegroup=1
+
+% Used to get around pandoc not supporting wide figures by default.
+\newenvironment{widefig}{\renewenvironment{figure}{\begin{figure*}[tb]\centering}{\end{figure*}}}
+
+$if(graphics)$
+\usepackage{graphicx,grffile,svg,epstopdf}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{tbp}
+\makeatother
+$endif$
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\begin{document}
+
+\title{$title$}
+
+\author{%
+$for(affiliations)$
+\IEEEauthorblockN{$affiliations.authors$}
+\IEEEauthorblockA{$if(affiliations.lab)$$affiliations.lab$\\$endif$
+  $if(affiliations.laboratory)$$affiliations.laboratory$\\$endif$
+  $if(affiliations.department)$$affiliations.department$\\$endif$
+  $if(affiliations.institute)$$affiliations.institute$\\$endif$
+  $if(affiliations.city)$$affiliations.city$, $endif$$if(affiliations.state)$$affiliations.state$, $endif$$if(affiliations.postcode)$$affiliations.postcode$$endif$\\
+  $if(affiliations.email)$Email: \{$affiliations.email$\}$endif$}
+  $endfor$
+}
+
+\maketitle
+
+\begin{abstract}
+$abstract$
+\end{abstract}
+
+\begin{IEEEkeywords}
+$keywords$
+\end{IEEEkeywords}
+
+% Decreases the vertical distance between rules in grammars from the syntax package
+\setlength{\grammarparsep}{1pt}
+
+$if(ieeeref)$
+\IEEEtriggeratref{$ieeeref$}
+$endif$
+
+$body$
+
+\end{document}

@@ -1,0 +1,15 @@
+secPrefix:
+  - "Sec."
+  - "Secs."
+figPrefix:
+  - "Fig."
+  - "Figs."
+eqnPrefix:
+  - "Eqn."
+  - "Eqns."
+tblPrefix:
+  - "Tab."
+  - "Tabs."
+lstPrefix:
+  - "Alg."
+  - "Algs."

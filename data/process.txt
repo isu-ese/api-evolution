@@ -1,0 +1,183 @@
+api-usability
+ - issues
+ - measurement
+ - smells
+ - patterns
+ - 
+
+api-evolution
+ - evolution
+   - adaptation
+   - migration
+   - change
+   - maintenance
+
+api && (evolution || adaptation || migration || change)+ && (usability || learnability || efficiency || correctness)
+api && (evolution || adaptation || migration || change || maintenance)+
+
+ACM: (((api) AND (evolution OR adaptation OR migration OR change)) AND (usability OR learnability OR efficiency))
+     
+
+  - Initial results: 119
+  - First Pass Reduction:
+  - Refinements:
+     * Date Range: 2009 - 2019
+     * Publishers: ACM (to remove redundancy with IEEE)
+  - First Reduction: 11
+  - First Backward Snowball: 19
+  - Second Backward Snowball: 22
+  - Third Backward Snowball: 22
+  - Forth Backward Snowball: 22
+  - First Forward Snowball: 29
+  - Fifth Backward Snowball: 29
+  - Second Forward Snowball: 29
+  - Sixth Backward Snowball: 29
+  - Third Forward Snowball: 29
+  - Final Reduction: 19
+
+  (api AND evolution)
+  - Initial results: 
+  - First Reduction: 11
+
+IEEE: (((api) AND (evolution OR adaptation OR migration OR change)) AND (usability OR learnability OR efficiency))
+
+  - Initial results: 80
+  - Refinements:
+     * Articles, Journals, and Magazines only
+     * Date Range: 2009 - 2019
+  - First Reduction: 11
+  - First Backward Snowball: 31
+  - Second Backward Snowball: 39
+  - Third Backward Snowball: 43
+  - Forth Backward Snowball: 45
+  - First Forward Snowball: 54
+  - Fifth Backward Snowball: 55
+  - Second Forward Snowball: 55
+  - Sixth Backward Snowball: 55
+  - Third Forward Snowball: 55
+  - Final Reduction: 33
+
+  (api AND evolution)
+  - Initial results: 261
+  - Refinements:
+     * Articles, Journals, and Magazines only
+     * Date Range: 2009 - 2019
+  - First Reduction: 3
+
+SPRINGER: ((api) AND (evolution OR adaptation OR migration OR change)) AND (usability OR learnability OR efficiency))
+          
+  - Initial results: 585
+  - Refinements:
+     * Discipline: Computer Science
+     * Subdiscipline: Software Engineering/Programming and Operating Systems
+     * Content Type: Article
+
+  - Initial results: 565
+  - Refinements:
+     * Discipline: Computer Science
+     * Subdiscipline: Software Engineering/Programming and Operating Systems
+     * Content Type: Conference Paper
+     * Date Range: 2009 - 2019
+
+  - First Reduction: 12
+  - First Backward Snowball: 19
+  - Second Backward Snowball: 22
+  - Third Backward Snowball: 22
+  - Forth Backward Snowball: 22
+  - First Forward Snowball: 25
+  - Fifth Backward Snowball: 25
+  - Second Forward Snowball: 25
+  - Sixth Backward Snowball: 25
+  - Third Forward Snowball: 25
+  - Final Reduction: 11
+
+  (api AND evolution)
+  - Initial results: 1451
+  - Refinements:
+     * Discipline: Computer Science
+     * Subdiscipline: Software Engineering
+     * Content Type: Conference Paper
+
+  - Initial results: 471
+  - Refinements:
+     * Discipline: Computer Science
+     * Subdiscipline: Software Engineering/Programming and Operating Systems
+     * Content Type: Article
+     * Date Range: 2009 - 2019
+
+  - First Reduction: 0
+
+SCIENCEDIRECT: api AND (evolution OR adaptation OR migration OR change) AND (usability OR learnability OR efficiency)
+               api AND (evolution OR adaptation OR migration OR change OR maintenance)
+
+  - Refinements:
+     * Journals:
+	- Information and Software Technology (242)
+	- Information Systems (142)
+	- Journal of Systems Architecture (110)
+	- Journal of Systems and Software (460)
+	- Science of Computer Programming (224)
+     * Article Types: Research Articles
+     * Date Range: 2009 - 2019
+  - First Reduction: 18
+  - First Backward Snowball: 18
+  - Second Backward Snowball: 19
+  - Third Backward Snowball: 19
+  - Forth Backward Snowball: 19
+  - First Forward Snowball: 19
+  - Fifth Backward Snowball: 19
+  - Second Forward Snowball: 19
+  - Sixth Backward Snowball: 19
+  - Third Forward Snowball: 19
+  - Final Reduction: 6
+
+  (api AND evolution)
+  - Refinements:
+     * Journals:
+	- Information and Software Technology (129)
+	- Information Systems (44)
+	- Journal of Systems Architecture (22)
+	- Journal of Systems and Software (253)
+	- Science of Computer Programming (224)
+     * Article Types: Research Articles
+     * Date Range: 2009 - 2019
+  - First Reduction: 0
+
+WEBOFSCIENCE: (((api) AND (evolution OR adaptation OR migration OR change)) AND (usability OR learnability OR efficiency))
+  
+  - Initial results: 61
+  - Refinements:
+     * Date Range: 2009 - 2019
+     * Language: English
+     * Document Type: Article
+     * Databases Used: SCI-EXPANDED, CPCI-S, ESCI
+     * Research Area: Computer Science
+     * Categories: 
+	- Computer Science Information Systems
+	- Computer Science Theory Methods
+        - Computer Science Software Engineering
+	- Computer Science Interdisciplinary Applications
+  - First Reduction: 4
+  - First Backward Snowball: 4
+  - Second Backward Snowball: 4
+  - Third Backward Snowball: 4
+  - Forth Backward Snowball: 4
+  - First Forward Snowball: 4
+  - Fifth Backward Snowball: 4
+  - Second Forward Snowball: 4
+  - Sixth Backward Snowball: 4
+  - Third Forward Snowball: 4
+  - Final Reduction: 0
+
+  (api AND evolution)
+  - Initial results: 132
+  - First Reduction: 0
+
+JOT:
+
+  - First Forward Snowball: 1
+  - Fifth Backward Snowball: 1
+  - Second Forward Snowball: 1
+  - Sixth Backward Snowball: 1
+  - Third Forward Snowball: 1
+  - Final Reduction: 1

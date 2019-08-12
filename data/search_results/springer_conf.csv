@@ -1,0 +1,4 @@
+other_id,Item Title,Publication Title,Book Series Title,Journal Volume,Journal Issue,Item DOI,Authors,Publication Year,URL,Content Type
+springer_conf_01,Generating Smart Wrapper Libraries for Arbitrary APIs,Software Language Engineering,,,,10.1007/978-3-642-12107-4_24,Uwe Jugel,2010,http://link.springer.com/chapter/10.1007/978-3-642-12107-4_24,Chapter
+springer_conf_02,Improving Documentation for eSOA APIs through User Studies,End-User Development,,,,10.1007/978-3-642-00427-8_6,Sae Young JeongYingyu XieJack BeatonBrad A. MyersJeff StylosRalf EhretJan KarstensArkin EfeogluDaniela K. Busse,2009,http://link.springer.com/chapter/10.1007/978-3-642-00427-8_6,Chapter
+springer_conf_03,Automatic Query-Centric API for Routine Access to Linked Data,The Semantic Web – ISWC 2017,,,,10.1007/978-3-319-68204-4_30,Albert Meroño-PeñuelaRinke Hoekstra,2017,http://link.springer.com/chapter/10.1007/978-3-319-68204-4_30,Chapter

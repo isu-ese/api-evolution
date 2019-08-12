@@ -1,0 +1,12 @@
+SD_18
+Damien Pollet, Stéphane Ducasse,
+A critical analysis of string APIs: The case of Pharo,
+Science of Computer Programming,
+Volume 161,
+2018,
+Pages 89-104,
+ISSN 0167-6423,
+https://doi.org/10.1016/j.scico.2017.11.005.
+(http://www.sciencedirect.com/science/article/pii/S0167642317302435)
+Abstract: Most programming languages, besides C, provide a native abstraction for character strings, but string APIs vary widely in size, expressiveness, and subjective convenience across languages. In Pharo, while at first glance the API of the String class seems rich, it often feels cumbersome in practice; to improve its usability, we faced the challenge of assessing its design. However, we found hardly any guideline about design forces and how they structure the design space, and no comprehensive analysis of the expected string operations and their different variations. In this article, we first analyze the Pharo 4 String library, then contrast it with its Haskell, Java, Python, Ruby, and Rust counterparts. We harvest criteria to describe a string API, and reflect on features and design tensions. This analysis should help language designers in understanding the design space of strings, and will serve as a basis for a future redesign of the string library in Pharo.
+Keywords: Strings; API; Library; Design; Style

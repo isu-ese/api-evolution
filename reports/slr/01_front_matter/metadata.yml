@@ -1,0 +1,33 @@
+---
+title: API Evolution and Co-Evolution -- A Systematic Literature Review
+title-running: API Evolution and Co-Evolution
+authors-running: Griffith and Uehlein
+affiliations:
+  authors: "Isaac Griffith and Brandon Uehlein"
+  laboratory: Empirical Software Engineering Laboratory
+  department: Informatics and Computer Science
+  institute: Idaho State University
+  city: "Pocatello"
+  state: "Idaho"
+  country: "United States"
+  postcode: "83208-3880"
+  email: "{grifisaa@isu.edu, uehlbran@isu.edu}"
+acm-doi:
+  copyrightyear: 2019
+  acmYear: 2019
+  setcopyright: acmlicensed
+  acmConference:
+    shortTitle: "Woodstock '18"
+    longTitle: "Woodstock '18: ACM Symposium on Neural Gaze Detection"
+    date: "June 03--05, 2018"
+    place: "Woodstock, NY"
+  acmBooktitle: "Woodstock '18: ACM Symposium on Neural Gaze Detection, June 03--05, 2018, Woodstock, NY"
+  acmPrice: 15.00
+  acmDOI: 10.1145/1122445.1122456
+  acmISBN: 978-1-4503-9999-9/18/06
+submission_id:
+abstract: |
+!indent(!include(abstract.md))
+listings: true
+keywords:
+...

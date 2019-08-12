@@ -1,0 +1,103 @@
+SD_10
+S. Raemaekers, A. van Deursen, J. Visser,
+Semantic versioning and impact of breaking changes in the Maven repository,
+Journal of Systems and Software,
+Volume 129,
+2017,
+Pages 140-158,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2016.04.008.
+(http://www.sciencedirect.com/science/article/pii/S0164121216300243)
+Abstract: Systems that depend on third-party libraries may have to be updated when updates to these libraries become available in order to benefit from new functionality, security patches, bug fixes, or API improvements. However, often such changes come with changes to the existing interfaces of these libraries, possibly causing rework on the client system. In this paper, we investigate versioning practices in a set of more than 100,000 jar files from Maven Central, spanning over 7 years of history of more than 22,000 different libraries. We investigate to what degree versioning conventions are followed in this repository. Semantic versioning provides strict rules regarding major (breaking changes allowed), minor (no breaking changes allowed), and patch releases (only backward-compatible bug fixes allowed). We find that around one third of all releases introduce at least one breaking change. We perform an empirical study on potential rework caused by breaking changes in library releases and find that breaking changes have a significant impact on client libraries using the changed functionality. We find out that minor releases generally have larger release intervals than major releases. We also investigate the use of deprecation tags and find out that these tags are applied improperly in our dataset.
+Keywords: Semantic versioning; Breaking changes; Software libraries
+
+SD_11
+Maria Kechagia, Marios Fragkoulis, Panos Louridas, Diomidis Spinellis,
+The exception handling riddle: An empirical study on the Android API,
+Journal of Systems and Software,
+Volume 142,
+2018,
+Pages 248-270,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2018.04.034.
+(http://www.sciencedirect.com/science/article/pii/S0164121218300724)
+Abstract: We examine the use of the Java exception types in the Android platform’s Application Programming Interface (API) reference documentation and their impact on the stability of Android applications. We develop a method that automatically assesses an API’s quality regarding the exceptions listed in the API’s documentation. We statically analyze ten versions of the Android platform’s API (14–23) and 3539 Android applications to determine inconsistencies between exceptions that analysis can find in the source code and exceptions that are documented. We cross-check the analysis of the Android platform’s API and applications with crash data from 901,274 application execution failures (crashes). We discover that almost 10% of the undocumented exceptions that static analysis can find in the Android platform’s API source code manifest themselves in crashes. Additionally, we observe that 38% of the undocumented exceptions that developers use in their client applications to handle API methods also manifest themselves in crashes. These findings argue for documenting known might-thrown exceptions that lead to execution failures. However, a randomized controlled trial we run shows that relevant documentation improvements are ineffective and that making such exceptions checked is a more effective way for improving applications’ stability.
+Keywords: Exceptions; Application programming interfaces; Documentation
+
+SD_12
+Tiago Espinha, Andy Zaidman, Hans-Gerhard Gross,
+Web API growing pains: Loosely coupled yet strongly tied,
+Journal of Systems and Software,
+Volume 100,
+2015,
+Pages 27-43,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2014.10.014.
+(http://www.sciencedirect.com/science/article/pii/S0164121214002180)
+Abstract: Web APIs provide a systematic and extensible approach for application-to-application interaction. Developers using web APIs are forced to accompany the API providers in their software evolution tasks. In order to understand the distress caused by this imposition on web API client developers we perform a semi-structured interview with six such developers. We also investigate how major web API providers organize their API evolution, and we explore how this affects source code changes of their clients. Our exploratory qualitative study of the Twitter, Google Maps, Facebook and Netflix web APIs analyzes the state of web API evolution practices and provides insight into the impact of service evolution on client software. In order to complement the picture and also understand how web API providers deal with evolution, we investigate the server-side and client-side evolution of two open-source web APIs, namely VirtualBox and XBMC. Our study is complemented with a set of observations regarding best practices for web API evolution.
+Keywords: Web API; Software evolution; Breaking changes
+
+SD_13
+André L. Santos, Brad A. Myers,
+Design annotations to improve API discoverability,
+Journal of Systems and Software,
+Volume 126,
+2017,
+Pages 17-33,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2016.12.036.
+(http://www.sciencedirect.com/science/article/pii/S016412121630262X)
+Abstract: User studies have revealed that programmers face several obstacles when learning application programming interfaces (APIs). A considerable part of such difficulties relate to discovery of API elements and the relationships among them. To address discoverability problems, we show how to complement APIs with design annotations, which document design decisions in a program-processable form for types, methods, and parameters. The information provided by the annotations is consumed by the integrated development environment (IDE) in order to assist API users with useful code completion proposals regarding object creation and manipulation, which facilitate API exploration and learning. As a proof of concept, we developed Dacite, a tool which comprises a set of Java annotations and an accompanying plugin for the Eclipse IDE. A user study revealed that Dacite is usable and effective, and Dacite’s proposals enable programmers to be more successful in solving programming tasks involving unfamiliar APIs.
+Keywords: API usability; Annotations; Code completion; IDE; Eclipse
+
+SD_14
+Hamzeh Eyal Salman,
+Identification multi-level frequent usage patterns from APIs,
+Journal of Systems and Software,
+Volume 130,
+2017,
+Pages 42-56,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2017.05.039.
+(http://www.sciencedirect.com/science/article/pii/S0164121217300869)
+Abstract: Software developers increasingly rely on application programming interfaces (APIs) of frameworks to increase productivity. An API method is generally used within code snippets along with other methods of the API of interest. When developers invoke API methods in a framework, they often encounter difficulty to determine which methods to call due to the huge number of included methods in that API. Developers usually exploit a source code search tool searching for code snippets that use the API methods of interest. However, the number of returned code snippets is very large which hinders the developer to locate useful ones. Moreover, co-usage relationships between API methods are often not documented. This article presents an approach to identify multi-level frequent usage patterns (IML-FUP) to help developers understand API usage and facilitate the development tasks when they use new APIs. An identified pattern represents a set of API methods that are frequently called together across interfering usage scenarios. In order to investigate the efficiency of the proposed approach, an experimental evaluation is conducted using four APIs and 89 client programs. For all studied APIs, the experimental results show that the proposed approach identifies usage patterns that are always strongly cohesive and highly consistent.
+Keywords: API documentation; API usage; Formal concept analysis; Identification; Usage patterns
+
+SD_15
+Gleison Brito, Andre Hora, Marco Tulio Valente, Romain Robbes,
+On the use of replacement messages in API deprecation: An empirical study,
+Journal of Systems and Software,
+Volume 137,
+2018,
+Pages 306-321,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2017.12.007.
+(http://www.sciencedirect.com/science/article/pii/S016412121730300X)
+Abstract: Libraries are commonly used to support code reuse and increase productivity. As any other system, they evolve over time, and so do their APIs. Consequently, client applications should be updated to benefit from better APIs. To facilitate this task, API elements should always be deprecated with replacement messages. However, in practice, there are evidences that API elements are deprecated without these messages. In this paper, we study questions regarding the adoption of deprecation messages. Our goal is twofold: to measure the real usage of deprecation messages and to investigate whether a tool is needed to recommend them. We assess (i) the frequency of deprecated elements with replacement messages, (ii) the impact of software evolution on this frequency, and (iii) the characteristics of systems that deprecate API elements in a correct way. Our analysis on 622 Java and 229 C# systems shows that: (i) on the median, 66.7% and 77.8% of the API elements are deprecated with replacement messages per project, (ii) there is no major effort to improve deprecation messages, and (iii) systems that deprecated API elements with messages are different in terms of size and community. As a result, we provide the basis for creating a tool to support clients detecting missing deprecation messages.
+Keywords: API deprecation; Software evolution; Mining software repositories; Empirical software engineering
+
+SD_16
+Anas Shatnawi, Abdelhak-Djamel Seriai, Houari Sahraoui, Zakarea Alshara,
+Reverse engineering reusable software components from object-oriented APIs,
+Journal of Systems and Software,
+Volume 131,
+2017,
+Pages 442-460,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2016.06.101.
+(http://www.sciencedirect.com/science/article/pii/S016412121630098X)
+Abstract: Object-oriented Application Programing Interfaces (APIs) support software reuse by providing pre-implemented functionalities. Due to the huge number of included classes, reusing and understanding large APIs is a complex task. Otherwise, software components are accepted to be more reusable and understandable entities than object-oriented ones. Thus, in this paper, we propose an approach for reengineering object-oriented APIs into component-based ones. We mine components as a group of classes based on the frequency they are used together and their ability to form a quality-centric component. To validate our approach, we experimented on 100 Java applications that used four APIs.
+Keywords: Software reuse; Software component; Object-oriented; API; Reverse engineering; Frequent usage pattern
+
+SD_17
+Mohamed Aymen Saied, Ali Ouni, Houari Sahraoui, Raula Gaikovina Kula, Katsuro Inoue, David Lo,
+Improving reusability of software libraries through usage pattern mining,
+Journal of Systems and Software,
+Volume 145,
+2018,
+Pages 164-179,
+ISSN 0164-1212,
+https://doi.org/10.1016/j.jss.2018.08.032.
+(http://www.sciencedirect.com/science/article/pii/S0164121218301699)
+Abstract: Modern software systems are increasingly dependent on third-party libraries. It is widely recognized that using mature and well-tested third-party libraries can improve developers’ productivity, reduce time-to-market, and produce more reliable software. Today’s open-source repositories provide a wide range of libraries that can be freely downloaded and used. However, as software libraries are documented separately but intended to be used together, developers are unlikely to fully take advantage of these reuse opportunities. In this paper, we present a novel approach to automatically identify third-party library usage patterns, i.e., collections of libraries that are commonly used together by developers. Our approach employs a hierarchical clustering technique to group together software libraries based on external client usage. To evaluate our approach, we mined a large set of over 6000 popular libraries from Maven Central Repository and investigated their usage by over 38,000 client systems from the Github repository. Our experiments show that our technique is able to detect the majority (77%) of highly consistent and cohesive library usage patterns across a considerable number of client systems.
+Keywords: Software libraries; Software reuse; Clustering; Usage patterns

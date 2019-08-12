@@ -1,0 +1,3 @@
+## Data Extraction Procedures
+
+We followed the methods of Petersen et al. \cite{petersen_guidelines_2015} to develop the categorization criteria to map the selected studies. Upon the completion of our search process, we then extracted keywords from each paper using the title, author's keywords, and abstracts as our data sources. In the case that these sources were too limited, we expanded to the introduction and conclusion sections of the paper as well. Using these keywords we then developed a classification scheme(s) to classify each paper. During the classification of the papers, we also identified the study type and knowledge artifact type of each paper.

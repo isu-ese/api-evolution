@@ -1,0 +1,188 @@
+SD_01
+Dong Qiu, Bixin Li, Hareton Leung,
+Understanding the API usage in Java,
+Information and Software Technology,
+Volume 73,
+2016,
+Pages 81-100,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2016.01.011.
+(http://www.sciencedirect.com/science/article/pii/S0950584916300027)
+Abstract: Context
+Application Programming Interfaces (APIs) facilitate the use of programming languages. They define sets of rules and specifications for software programs to interact with. The design of language API is usually artistic, driven by aesthetic concerns and the intuitions of language architects. Despite recent studies on limited scope of API usage, there is a lack of comprehensive, quantitative analyses that explore and seek to understand how real-world source code uses language APIs.
+Objective
+This study aims to understand how APIs are employed in practical development and explore their potential applications based on the results of API usage analysis.
+Method
+We conduct a large-scale, comprehensive, empirical analysis of the actual usage of APIs on Java, a modern, mature, and widely-used programming language. Our corpus contains over 5000 open-source Java projects, totaling 150 million source lines of code (SLoC). We study the usage of both core (official) API library and third-party (unofficial) API libraries. We resolve project dependencies automatically, generate accurate resolved abstract syntax trees (ASTs), capture used API entities from over 1.5 million ASTs, and measure the usage based on our defined metrics: frequency, popularity and coverage.
+Results
+Our study provides detailed quantitative information and yield insight, particularly, (1) confirms the conventional wisdom that the usage of APIs obeys Zipf distribution; (2) demonstrates that core API is not fully used (many classes, methods and fields have never been used); (3) discovers that deprecated API entities (in which some were deprecated long ago) are still widely used; (4) evaluates that the use of current compact profiles is under-utilized; (5) identifies API library coldspots and hotspots.
+Conclusions
+Our findings are suggestive of potential applications across language API design, optimization and restriction, API education, library recommendation and compact profile construction.
+Keywords: API usage; Empirical study; Java
+
+SD_02
+Marcos Borges, Erick Barros, Paulo Henrique Maia,
+Cloud restriction solver: A refactoring-based approach to migrate applications to the cloud,
+Information and Software Technology,
+Volume 95,
+2018,
+Pages 346-365,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2017.11.014.
+(http://www.sciencedirect.com/science/article/pii/S0950584917301799)
+Abstract: Context
+The migration of legacy systems to the Platform as a Service (PaaS) model provides several benefits, but also brings new challenges, such as dealing with the restrictions imposed by the service provider. Furthermore, factors such as time, training and the extensive reengineering activities make the migration process time consuming and error prone. Although there exist several techniques for partial or total migration of legacy applications to the cloud, only a few specifically address the resolution of these constraints.
+Objective
+This paper proposes a novel semi-automatic approach, called Cloud Restriction Solver (CRS), for migrating applications to a PaaS environment that avoids the cloud restrictions through user-defined refactorings.
+Methods
+The approach is supported by two open and extensible tools. The first one, called CRSAnalyzer, identifies the pieces of code that violate the restrictions of the chosen PaaS platform, while the second one, CRSRefactor, changes those pieces by equivalent cloud-enabled services.
+Results
+The applicability of the proposed approach is presented by showing its instantiation for Google App Engine as an Eclipse plugin and by migrating three Java applications to that PaaS successfully. In addition, an instantiation for IBM Bluemix has been created and used to compare the migration of the same application using the developed tools for both cloud providers.
+Conclusion
+The proposed approach fosters software reuse, is cloud-independent, and facilitates the migration of applications to PaaS platforms.
+Keywords: Software evolution; Cloud migration; Refactoring
+
+SD_03
+Thomas Scheller, Eva Kühn,
+Automated measurement of API usability: The API Concepts Framework,
+Information and Software Technology,
+Volume 61,
+2015,
+Pages 145-162,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2015.01.009.
+(http://www.sciencedirect.com/science/article/pii/S0950584915000178)
+Abstract: Context
+Usability is an important software quality attribute for APIs. Unfortunately, measuring it is not an easy task since many things like experienced evaluators, suitable test users, and a functional product are needed. This makes existing usability measurement methods difficult to use, especially for non-professionals.
+Objective
+To make API usability measurement easier, an automated and objective measurement method would be needed. This article proposes such a method. Since it would be impossible to find and integrate all possible factors that influence API usability in one step, the main goal is to prove the feasibility of the introduced approach, and to define an extensible framework so that additional factors can easily be defined and added later.
+Method
+A literature review is conducted to find potential factors influencing API usability. From these factors, a selected few are investigated more closely with usability studies. The statistically evaluated results from these studies are used to define specific elements of the introduced framework. Further, the influence of the user as a critical factor for the framework’s feasibility is evaluated.
+Results
+The API Concepts Framework is defined, with an extensible structure based on concepts that represent the user’s actions, measurable properties that define what influences the usability of these concepts, and learning effects that represent the influence of the user’s experience. A comparison of values calculated by the framework with user studies shows promising results.
+Conclusion
+It is concluded that the introduced approach is feasible and provides useful results for evaluating API usability. The extensible framework easily allows to add new concepts and measurable properties in the future.
+Keywords: API usability; API design; Complexity measures; Metrics
+
+SD_04
+Kamil Jezek, Jens Dietrich, Premek Brada,
+How Java APIs break – An empirical study,
+Information and Software Technology,
+Volume 65,
+2015,
+Pages 129-146,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2015.02.014.
+(http://www.sciencedirect.com/science/article/pii/S0950584915000506)
+Abstract: Context
+It has become common practice to build programs by using libraries. While the benefits of reuse are well known, an often overlooked risk are system runtime failures due to API changes in libraries that evolve independently. Traditionally, the consistency between a program and the libraries it uses is checked at build time when the entire system is compiled and tested. However, the trend towards partially upgrading systems by redeploying only evolved library versions results in situations where these crucial verification steps are skipped. For Java programs, partial upgrades create additional interesting problems as the compiler and the virtual machine use different rule sets to enforce contracts between the providers and the consumers of APIs.
+Objective
+We have studied the extent of the problem in real world programs. We were interested in two aspects: the compatibility of API changes as libraries evolve, and the impact this has on programs using these libraries.
+Method
+This study is based on the qualitas corpus version 20120401. A data set consisting of 109 Java open-source programs and 564 program versions was used from this corpus. We have investigated two types of library dependencies: explicit dependencies to embedded libraries, and dependencies defined by symbolic references in Maven build files that are resolved at build time. We have used JaCC for API analysis, this tool is based on the popular ASM byte code analysis library.
+Results
+We found that for most of the programs we investigated, APIs are unstable as incompatible changes are common. Surprisingly, there are more compatibility problems in projects that use automated dependency resolution. However, we found only a few cases where this has an actual impact on other programs using such an API.
+Conclusion
+It is concluded that API instability is common and causes problems for programs using these APIs. Therefore, better tools and methods are needed to safeguard library evolution.
+Keywords: Binary compatibility; API evolution; Backward compatibility; Byte-code; Java
+
+SD_05
+Raula Gaikovina Kula, Ali Ouni, Daniel M. German, Katsuro Inoue,
+An empirical study on the impact of refactoring activities on evolving client-used APIs,
+Information and Software Technology,
+Volume 93,
+2018,
+Pages 186-199,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2017.09.007.
+(http://www.sciencedirect.com/science/article/pii/S0950584917304780)
+Abstract: Context
+Refactoring is recognized as an effective practice to maintain evolving software systems. For software libraries, we study how library developers refactor their Application Programming Interfaces (APIs), especially when it impacts client users by breaking an API of the library.
+Objective
+Our work aims to understand how clients that use a library API are affected by refactoring activities. We target popular libraries that potentially impact more library client users.
+Method
+We distinguish between library APIs based on their client-usage (referred to as client-used APIs) in order to understand the extent to which API breakages relate to refactorings. Our tool-based approach allows for a large-scale study across eight libraries (i.e., totaling 183 consecutive versions) with around 900 clients projects.
+Results
+We find that library maintainers are less likely to break client-used API classes. Quantitatively, we find that refactoring activities break less than 37% of all client-used APIs. In a more qualitative analysis, we show two documented cases of where non-refactoring API breaking changes are motivated other maintenance issues (i.e., bug fix and new features) and involve more complex refactoring operations.
+Conclusion
+Using our automated approach, we find that library developers are less likely to break APIs and tend to break client-used APIs when performing maintenance issues.
+Keywords: Refactoring; API Breakages; Software libraries; Software evolution
+
+SD_06
+Anita Gupta, Jingyue Li, Reidar Conradi, Harald Rønneberg, Einar Landre,
+Change profiles of a reused class framework vs. two of its applications,
+Information and Software Technology,
+Volume 52, Issue 1,
+2010,
+Pages 110-125,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2009.08.002.
+(http://www.sciencedirect.com/science/article/pii/S0950584909001232)
+Abstract: Software reuse is expected to improve software productivity and quality. Although many empirical studies have investigated the benefits and challenges of software reuse from development viewpoints, few studies have explored reuse from the perspective of maintenance. This paper reports on a case study that compares software changes during the maintenance and evolution phases of a reused Java class framework with two applications that are reusing the framework. The results reveal that: (1) The reused framework is more stable, in terms of change density, than the two applications that are reusing it. (2) The reused framework has profiles for change types that are similar to those of the applications, where perfective changes dominate. (3) The maintenance and evolution lifecycle of both the reused framework and its applications is the same: initial development, followed by a stage with extending capabilities and functionality to meet user needs, then a stage in which only minor defect repairs are made, and finally, phase-out. However, the reused framework goes faster from the stage of extending capabilities to the stage in which only minor defect repairs are made than its applications. (4) We have validated that several factors, such as are functionalities, development practice, complexity, size, and age, have affected the change densities and change profiles of the framework and applications. Thus, all these factors must be considered to predict change profiles in the maintenance and evolution phase of software.
+Keywords: Software reuse; Software change profile; Case study; Class framework
+
+SD_07
+Eduardo Mosqueira-Rey, David Alonso-Ríos, Vicente Moret-Bonillo, Isaac Fernández-Varela, Diego Álvarez-Estévez,
+A systematic approach to API usability: Taxonomy-derived criteria and a case study,
+Information and Software Technology,
+Volume 97,
+2018,
+Pages 46-63,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2017.12.010.
+(http://www.sciencedirect.com/science/article/pii/S0950584917302471)
+Abstract: Context
+The currently existing literature about Application Program Interface (API) usability is heterogeneous in terms of goals, scope, and audience; and its connection to accepted definitions of usability is rarely made explicit. The use of metrics to measure API usability is focused only on measurable characteristics excluding those usability aspects that are related to the subjectivity of human opinions.
+Objective
+Our objective is to build a comprehensive set of heuristics and guidelines for API usability that is a structured synthesis of the existing literature on API usability but which also covers other aspects that have been neglected so far. This set is explicitly connected with a usability model, something that allows us to check if we are addressing actual usability problems.
+Method
+Our approach is to follow a systematic approach based on a comprehensive model of usability and context-of-use. From this comprehensive model we derived the set of heuristics and guidelines that are used to carry out a heuristic evaluation with usability experts and a subjective analysis with users. The influence of the context of use, something that is normally ignored, is explicitly analyzed.
+Results
+Our heuristics and guidelines were integrated into a usability study of a sleep medicine API. In this study, we were able to identify several usability issues of the proposed API that are not explicitly addressed in the existing literature. The context of use helped us to identify those categories that were more relevant to consider in order to improve API usability.
+Conclusion
+The literature on API usability is very technically-minded and tends to neglect the subjective component of usability. We contribute to a more global and comprehensive view of the usability of APIs that is not contradictory but complementary with metrics. Our criteria ease the always necessary usability evaluation with human evaluators and users.
+Keywords: Usability; Usability taxonomies; Usability studies; Application program interfaces; APIs; Sleep medicine
+
+SD_08
+Hayet Brabra, Achraf Mtibaa, Fabio Petrillo, Philippe Merle, Layth Sliman, Naouel Moha, Walid Gaaloul, Yann-Gaël Guéhéneuc, Boualem Benatallah, Faïez Gargouri,
+On semantic detection of cloud API (anti)patterns,
+Information and Software Technology,
+Volume 107,
+2019,
+Pages 65-82,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2018.10.012.
+(http://www.sciencedirect.com/science/article/pii/S095058491830226X)
+Abstract: Context
+Open standards are urgently needed for enabling software interoperability in Cloud Computing. Open Cloud Computing Interface (OCCI) provides a set of best design principles to create interoperable REST management APIs. Although OCCI is the only standard addressing the management of any kind of cloud resources, it does not support a range of best principles related to REST design. This often worsens REST API quality by decreasing their understandability and reusability.
+Objective
+We aim at assisting cloud developers to enhance their REST management APIs by providing a compliance evaluation of OCCI and REST best principles and a recommendation support to comply with these principles.
+Method
+First, we leverage patterns and anti-patterns to drive respectively the good and poor practices of OCCI and REST best principles. Then, we propose a semantic-based approach for defining and detecting REST and OCCI (anti)patterns and providing a set of correction recommendations to comply with both REST and OCCI best principles. We validated this approach by applying it on cloud REST APIs and evaluating its accuracy, usefulness and extensibility.
+Results
+We found that our approach accurately detects OCCI and REST(anti)patterns and provides useful recommendations. According to the compliance results, we reveal that there is no widespread adoption of OCCI principles in existing APIs. In contrast, these APIs have reached an acceptable level of maturity regarding REST principles.
+Conclusion
+Our approach provides an effective and extensible technique for defining and detecting OCCI and REST (anti)patterns in Cloud REST APIs. Cloud software developers can benefit from our approach and defined principles to accurately evaluate their APIs from OCCI and REST perspectives. This contributes in designing interoperable, understandable, and reusable Cloud management APIs. Thank to the compliance analysis and the recommendation support, we also contribute to improving these APIs, which make them more straightforward.
+Keywords: Cloud computing; REST; OCCI; Pattern; Anti-pattern; Analysis; Specification; Detection; Ontology
+
+SD_09
+Chih-Hung Chang, Chih-Wei Lu, Pao-Ann Hsiung,
+Pattern-based framework for modularized software development and evolution robustness,
+Information and Software Technology,
+Volume 53, Issue 4,
+2011,
+Pages 307-316,
+ISSN 0950-5849,
+https://doi.org/10.1016/j.infsof.2010.11.006.
+(http://www.sciencedirect.com/science/article/pii/S0950584910002077)
+Abstract: Context
+Software development is now facing much more challenges than ever before due to the intrinsic high complexity and the increasing demands of the quick-service-ready paradigm.
+Objective
+As the developers are now called for more quality software systems from the industries, there is insufficient guidance from the methodologies and standards of software engineering that can provide assistance to the rapid development of qualified business software.
+Method
+In this work, we discuss the advantages of the pattern-based software development. We verify the benefits using a pattern-based software framework called OS2F, and a corresponding system design architecture that is intended for the rapid development of web applications.
+Results
+The objective of the framework/architecture is that, through software patterns, developers should be able to separate the work of system development from the business rules so as to reduce the problems caused by a developer’s lack of business experiences.
+Conclusion
+Through a suitable pattern-based software framework, the quality of the product can thus be enhanced, software development time and cost decreased, and software evolution robustness improved.
+Keywords: Software standardization and integration; Evolution robustness; Design pattern; Framework
