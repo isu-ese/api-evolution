@@ -111,15 +111,6 @@ cp ~/.bashrc ~/.bashrc.backup.1
 echo "export PATH=\"\$PATH:$HOME/.local/bin\"" >> ~/.bashrc
 ```
 
-### Graphviz
-
-Graphviz is used to produce images of graphs given a textual representation. PP is integrated with Graphviz and allows
-you to embed graphviz images directly in markdown. To install graphviz on ubuntu, run the following:
-
-```bash
-sudo apt install graphviz
-```
-
 ### Fonts
 
 This project uses the Futura LT BT font. To install, execute the following command:
@@ -166,25 +157,3 @@ $ presentation/build.sh
 ## Cleanup generated files
 
 The `clean.sh` script will cleanup files generated in any directory.
-
-## Citation Autocomplete in Editors
-
-Install Zotero: https://www.zotero.org/download/
-
-Install the Zotero Better BibTeX plugin: https://retorque.re/zotero-better-bibtex/installation/
-
-Editors
-- Zettlr - https://www.zettlr.com - In the preference > export settings menu, select isu-ese.json and ieee.csl for CSL JSON Database and CSL-style fields.
-- Atom - Install the zotero-citations package.
-- VS Code - Install the "Citation Picker for Zotero" extension
-
-## Important changes from template
-
-* Addition of `.gitignore` and `clean.sh` to create a cleaner repository.
-* Addition of `ieee.csl` and `isu-ese.json` to shift citation handling from bibtex to pandoc.
-* Bug fixes in `presentation/template.latex`, `templates/ieee.latex`, and `report/metadata.yml.mdpp`.
-* Replacement of `markdown-pp` with `pp` because `pp` is better suited and supports indenting included code and includes many other useful features such as allowing graphviz files to be embedded.
-* Refactor of build scripts to eliminate code duplication.
-* Renamed directory aggregate files to `all.md`. This is to make it easier to tell which files are merely aggregating other files by convention.
-* Converted all `mdpp` extensions to `md`. This is so that Zettlr will allow opening such files.
-* Addition of img directory
